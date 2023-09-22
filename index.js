@@ -26,5 +26,7 @@ const isAnimalExtint = (animal) => {
 };
 
 const getAnimalDescription = (animal) => {
-  return `El animal ${animal.name} es un ${animal.spieces} de ${animal.age} años de edad y pesa ${animal.weight} kg.`;
+  return `The animal ${animal.name} is a ${animal.spieces} o ${animal.age} years old and weights ${animal.weight} kg.`;
 };
+
+console.log(getAnimalDescription(secondAnimal));
