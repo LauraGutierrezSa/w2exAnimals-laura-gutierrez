@@ -16,3 +16,11 @@ const secondAnimal = {
 };
 
 const getAnimalSpieces = (animal) => animal.spieces;
+
+const isAnimalExtint = (animal) => {
+  if (animal.extintionYear === null) {
+    return "This animal is not extint.";
+  } else {
+    return "This animal is extint.";
+  }
+};
