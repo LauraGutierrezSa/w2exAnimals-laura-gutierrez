@@ -12,16 +12,15 @@ const secondAnimal = {
   age: 5,
   weight: 6,
   spieces: "Mammal",
-  extintionYear: null,
 };
 
 const getAnimalSpieces = (animal) => animal.spieces;
 
 const isAnimalExtint = (animal) => {
-  if (animal.extintionYear === null) {
-    return "This animal is not extint.";
+  if (animal.extintionYear) {
+    return true;
   } else {
-    return "This animal is extint.";
+    return false;
   }
 };
 
@@ -29,4 +28,4 @@ const getAnimalDescription = (animal) => {
   return `The animal ${animal.name} is a ${animal.spieces} o ${animal.age} years old and weights ${animal.weight} kg.`;
 };
 
-console.log(getAnimalDescription(secondAnimal));
+console.log(isAnimalExtint(firstAnimal));
